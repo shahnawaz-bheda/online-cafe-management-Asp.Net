@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>images/banner-16.jpg</ImageUrl>
+    <Height>500</Height>
+  </Ad>
+  <Ad>
+    <ImageUrl>images/banner-17.jpg</ImageUrl>
+    <Height>500</Height>
+  </Ad>
+  <Ad>
+    <ImageUrl>images/coffee-banner-2.jpg</ImageUrl>
+    <Height>500</Height>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>images/cover_restaurant.jpg</ImageUrl>
+    <Height>500</Height>
+  </Ad>
+ 
+  <!--<Ad>
+    <ImageUrl>images/banner-7.jpg</ImageUrl>
+    <Height>400</Height>
+  </Ad>
+  <Ad>
+    <ImageUrl>images/banner-8.jpg</ImageUrl>
+    <Height>400</Height>
+  </Ad>-->
+</Advertisements>

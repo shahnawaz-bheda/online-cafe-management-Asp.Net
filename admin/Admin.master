@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body {
+            background:url("../images/01.webp")no-repeat center center fixed;
+        }
+        .img {
+            margin-left:-5%;
+            }    
+       *
+        {
+            margin:0px;
+            padding : 0px;
+        }
+        #menu 
+        {
+            margin-left:15%;
+            margin-top:-2%;
+        }
+        #menu ul
+        {
+            margin-left:20px;
+            list-style:none;
+            margin:1px;
+        }
+
+        #menu ul li
+        {
+            background-color:chocolate;
+            border:1px solid white;
+            width:200px;
+            height:35px;    
+            line-height:35px;
+            text-align:center;
+            float:left;
+            margin-right:10px;
+            position:relative;
+            border-radius:10px;
+        }
+            #menu ul li a 
+            {
+                text-decoration:none;
+                color:white;
+                display:block;
+                border-radius:15px;
+                 
+                
+            }
+                #menu ul li a:hover 
+                {
+                      color:black;
+                      background-color:#D6DA77;
+                      border-radius:6px;
+                      
+                }
+
+            #menu ul ul 
+            {
+                position:absolute;
+                display:none;
+                
+            }
+                #menu ul ul li {
+                    margin:2px;
+                }
+            #menu ul li:hover > ul 
+            {
+                
+                display:block;
+            }
+        #form1 {
+            text-align: left;
+        }
+        
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+          <div >
+      <asp:Image ID="Image1" runat="server" CssClass="img"  ImageUrl="../images/Cafe%20Logo.png" Height="196px" Width="441px" />
+              </div>
+              <div id="menu">
+                 <ul >
+                    <li><a href="Admin_Home.aspx">Home</a></li>
+                    <li><a href="#">Products</a>
+                        <ul>
+                            <li><a href="Add_category.aspx">Add Category</a></li>
+                            <li><a href="Add_subcategory.aspx">Add SubCategory</a></li>
+                            <li><a href="Add_product.aspx">Add Product</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Order Details</a>
+                        <ul>
+                            <li><a href="../client/frm_tea.aspx">Add Order</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../client/Shop_Cart.aspx">Add to Cart</a></li>
+                     <li><a href="../client/client_home.aspx">Log Out</a></li>
+                </ul>
+            </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

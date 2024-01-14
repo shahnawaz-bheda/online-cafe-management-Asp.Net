@@ -1,0 +1,222 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Client.master.cs" Inherits="Client" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body {
+    margin:0;
+    padding:0;
+    background: url(../images/01.webp) no-repeat center center fixed;
+
+    background-size:cover;
+    font-family:sans-serif;
+}
+        .footer {
+                position:absolute;
+                box-sizing:content-box;           
+                margin:2%;
+                margin-top:5%;    
+        }
+        .user {
+            position:absolute;
+            margin-left:70%;
+            margin-top:5%;
+        }
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 23px;
+        }
+        .auto-style3 {
+            width: 339px;
+        }
+        .auto-style4 {
+            height: 23px;
+            width: 339px;
+        }
+
+        *
+        {
+            margin:0px;
+            padding : 0px;
+        }
+        .header {
+            z-index:20;
+        }
+        #menu 
+        {
+            margin-left:7.9%;
+            margin-top:-5%;
+            
+            
+        }
+        #menu ul
+        {
+            margin-left:-80px;
+            list-style:none;
+            
+        }
+
+        #menu ul li
+        {
+            background-color:chocolate;
+            border:1px solid white;
+            width:150px;
+            height:35px;    
+            line-height:35px;
+            text-align:center;
+            float:left;
+            margin:2px;
+            margin-right:10px;
+            position:relative;
+            border-radius:10px;
+          
+        }
+            #menu ul li a 
+            {
+                
+                text-decoration:none;
+                color:white;
+                display:block;
+                 border-radius:10px;
+                 
+                
+            }
+                #menu ul li a:hover 
+                {
+                    background-color:#D6DA77;
+                      border-radius:10px;
+                      color:black;
+                }
+
+            #menu ul ul 
+            {
+                z-index:99999999;
+                position:absolute;
+                display:none;
+                padding-left:80px;
+            }
+            #menu ul li:hover > ul 
+            {
+
+                display:block;
+            }
+        .img {
+                margin-left:-7%;
+
+        }
+        .phone
+        {
+              position:absolute;
+            margin-left:-95%;
+            margin-top:18%;   
+        }
+        .Address
+        {
+             position:absolute;
+            margin-left:-95%;
+            margin-top:-0.1%;
+            
+        }
+        .Email
+        {
+            position:absolute;
+            margin-left:-95%;
+            margin-top:10%;
+            
+        }
+        .quick-link
+        {
+            position:absolute;
+            margin-left:-67%;
+            /*margin-left:-95%;*/
+            margin-top:-1%;
+        }
+        .followus
+        {
+            position:absolute;
+            margin-left:50%;
+            margin-top:-34.7%;
+        }
+        
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="header" style="color:white"><br/>
+            <asp:Image ID="image1" runat="server" CssClass="img" Height="196px" Width="441px"  ImageUrl="../images/Cafe Logo.png" /> 
+            </div>
+        <br />
+        <br />
+        <br />
+          <div id="menu">
+                <ul >
+                    <li><a href="client_home.aspx">Home</a></li>
+                    
+                    <li><a href="frm_tea.aspx">Shop</a>
+                        
+                    </li>
+                    <li><a href="AboutUs.aspx">About Us</a></li>
+                    <li><a href="contactUs.aspx">Contact Us</a></li>
+                    <li><a href="Shop_Cart.aspx">Shop Cart</a></li>
+                    <li><a href="Client_Registrion.aspx">Registration</a></li>
+                    <li><a href="Login.aspx">Login</a></li>
+                    <li><a href="../admin/Admin_Login.aspx">Admin Login</a></li>
+
+                </ul>
+            </div><br><br><br><br><br><br><br><br>
+       
+
+    <div><br/><br/>
+        <center>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+ <div style="padding-top:85px"class="footer">
+        <asp:Image ID="Image2" runat="server" ImageUrl="../images/Cafe Logo.png" CssClass="user" />
+     
+    <img src="../images/Footer_02.png" alt="Avatar" style="width:100%"/>
+      
+      <span class="Address" style="padding-top:10%; color:white; font-family:Arial" >
+          <h3>D-001 Elanza crest, sindhu<br>Bhavan Road,Bodakdev,<br>Ahmedabad-380 059.<br>Gujarat,india</h3>
+     </span>
+ 
+   <%--  <span class="phone" style="padding-top:10%; font-family:Arial" >
+      <b><a style="color:white" href="tel:9558362840">Phone: 9558362840</a></b>
+     </span>--%>
+       <span class="phone" >
+           <b><a href="tel:9558362840" runat="server">Phone No:9558362840,</a></b></br></br>
+       </span>
+         
+      <span class="Email" style="padding-top:10%;  font-family:Arial; font-weight: 700;" >
+              <b><a style="color:white" href="mailto:shahnawazbheda@gmail.com">Email 1: shahnawazbheda@gmail.com</a></b></br></br>
+       </span>
+
+        <span class="quick-link" style="padding-top:10%; font-family:Arial; font-weight: 700;" >
+            <b><h2 style="color:white">QUICK LINKS</h2></b></br>
+             <b><h3><a style="color:white" href="frm_tea.aspx">Shop</a></h3></b></br>
+             <b><h3><a style="color:white" href="AboutUs.aspx">About Us</a></h3></b></br>
+             <b><h3><a style="color:white" href="contactUs.aspx">Contact Us</a></h3></b></br>
+        </span><br>
+        <span class="followus" style="padding-top:10%; font-family:Arial; font-weight: 700;">
+            <b><h2 style="color:white">FOLLOW US</h2></b></br>
+            <b><h3><a style="color:white" href="https://www.facebook.com/shahnawazbheda">Facebook</a></h3></b></br>
+            <b><h3><a style="color:white" href="https://www.instagram.com/mr.saanu_07">Instagram</a></h3></b></br>
+            <b><h3><a style="color:white" href="https:/twitter.com/BhedaShahnawaz">Twiter</a></h3></b></br>
+            <b><h3><a style="color:white" href="https:/in.linkedin.com/Shahnawaz Bheda">LikedIn</a></h3></b></br>
+            
+        </span>
+</div>
+        
+    </form>
+</body>
+</html>

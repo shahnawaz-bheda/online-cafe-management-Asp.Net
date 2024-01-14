@@ -1,0 +1,98 @@
+﻿body {
+    margin:0;
+    padding:0;
+     background: url(../images/01.webp) no-repeat center center fixed;
+
+    background-size:cover;
+    font-family:sans-serif;
+}
+
+.regstrionbox {
+    position:absolute;
+    top:50%;
+    left:49%;
+    transform:translate(-50%,-50%);
+    width:380px;
+    height:556px;
+    padding:80px 40px;
+    box-sizing:border-box;
+    background:rgba(0,0,0,0.5);
+}
+.user{
+    width:200px;
+    height:200px;
+    top:-14%;
+    overflow:hidden;
+    left:calc(50% - 95px);
+    position:absolute;
+}
+.lblname,.lblradio,.lblcity, .lblmob, .lblemail, .lblpass, .lblcpass {
+     font-weight:bold;
+     color:#fff;
+     
+}
+.txtname, .txtcity, .txtcontact, .txtemail, .txtpass, .txtcpass {
+      width:90%;
+      margin-right:20px;
+}
+.txtname, .txtcity, .txtcontact, .txtemail, .txtpass, .txtcpass {
+    border:none;
+    border-bottom:2px solid #fff;
+    outline:none;
+    height:20px;
+    color:#fff;
+    font-size:16px;
+    background-color:transparent;
+}
+
+::placeholder {
+    color:rgba(255,255,255,.5);
+}
+.btnsubmit {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    background-color:#FF7D33;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    width:60%;
+    height:30px;
+    margin-left:20%;
+}
+.btnsubmit:hover{
+     background-color:#D6DA77;
+     color:black;
+}
+.hpllogout {
+    font-size: 16px;
+    margin-left:60%;
+    font-weight: 700;
+    text-decoration: none;
+    color:ActiveBorder;
+}
+.hpllogout:hover {
+    text-decoration:underline;
+}
+
+.grid {
+    margin-top:6px;
+    margin-left:-60%;
+    border:solid;
+    border-color:white;
+    background:rgba(0,0,0,0.8);    
+    border: medium;
+    width:95%;
+}
+.grid td{
+    padding:6px;
+    border:1px solid #c1c1c1;font-size:1em;
+    font-family:Arial;
+    color:white;
+}
+.grid th{
+    padding:6px 4px;color:white;text-shadow:none;
+}
